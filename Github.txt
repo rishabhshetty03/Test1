@@ -15,6 +15,6 @@ cd and go to folder u want to create copy  of github repo then,
 
 
 
-----
+---------
 
 if u write -> git commit and enter without -m, it opens a editor which is for writing multiline message, to get out of that after writing  press escape and :WQ then enter 
