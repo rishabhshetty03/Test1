@@ -1,0 +1,20 @@
+ 
+cd and go to folder u want to create copy  of github repo then,     
+1. git clone repolink-> creates a clone/copy  of repo
+
+2.git status -> gives the diffrence betwwen change in our local repo cloned(if made any change or added file) and the repo on github online
+
+3. git add  filename->   add file(git add./git add -A->adds all files in that repo)
+
+4. git commit -m "any message" ->commits the file or locks it in repo, but it is our local repo, not in sync still with github.com online repo, for that we need to push as below.
+
+5.git push
+  
+-----
+6.git pull ->pulls all the files from that online gitu repo(make suure to be cd into the repo while running these comands)
+
+
+
+----
+
+if u write -> git commit and enter without -m, it opens a editor which is for writing multiline message, to get out of that after writing  press escape and :WQ then enter 
