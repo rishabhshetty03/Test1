@@ -15,6 +15,29 @@ cd and go to folder u want to create copy  of github repo then,
 
 
 
----------
+----
 
 if u write -> git commit and enter without -m, it opens a editor which is for writing multiline message, to get out of that after writing  press escape and :WQ then enter 
+--------------
+
+branching reference
+https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/
+Branching
+everyone uses branches created from master to experiment, make edits and additions and changes, before eventually rolling that branch back into the master once they have been approved and are known to work. Master then is updated to contain all the new stuff.
+
+9.git branch -a   into terminal, which tells git that we want to see ALL the branches in this project, even ones that are not in our local workspace.
+
+10.To create this new branch, type “git checkout -b branchNameHere” (so, in our case, “git checkout -b hello_octo”).
+
+We can also use the git checkout command to toggle back and forth between our two branches. Type “git checkout branchName” to switch to that branch. So, “git checkout master” takes you to master while “git checkout hello_octo” takes you back to hello_octo branch.
+
+We could also have created our branch using the git command “git branch branchNameHere”, and then switch to it with git checkout. However, the neat little shortcut with the “-b” in “git checkout -b branchNameHere” both creates the branch AND switches to it.
+
+The process of moving code between branches (often from development to production) is known as merging.
+ when merging, we need to be on the branch that we want to merge to
+
+11.git merge branchname -–no-ff — the additional “–no-ff” tells git we want to retain all of the commit messages prior to the merge. This will make tracking changes easier in the future
+
+12.To delete a merged branch, simply type “git branch -d branchName”:
+
+
