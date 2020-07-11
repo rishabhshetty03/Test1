@@ -39,5 +39,12 @@ The process of moving code between branches (often from development to productio
 11.git merge branchname -–no-ff — the additional “–no-ff” tells git we want to retain all of the commit messages prior to the merge. This will make tracking changes easier in the future
 
 12.To delete a merged branch, simply type “git branch -d branchName”:
+---
+13. To creta a branch and push that branch in online repo:
+Create a new branch:
+git checkout -b feature_branch_name
+Edit, add and commit your files.
+Push your branch to the remote repository:
+git push -u origin feature_branch_name
 
-
+https://forum.freecodecamp.org/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
